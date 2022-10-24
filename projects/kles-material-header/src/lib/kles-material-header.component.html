@@ -1,0 +1,24 @@
+<mat-toolbar *ngIf="enableTitle" [color]="color" class="toolbar">
+    <h2 class="mat-h2">{{title | translate}}</h2>
+    <span class="fill-space"></span>
+    <button mat-mini-fab class="close" flex *ngIf="close" (click)="goBack()">
+        <mat-icon aria-hidden="false" aria-label="close">close</mat-icon>
+    </button>
+</mat-toolbar>
+<nav *ngIf="!isStretch" mat-tab-nav-bar fxFlex>
+    <ng-container *ngFor="let link of navLinks">
+        <a mat-tab-link [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive"
+            *ngIf="link.visible || link.visible == null">
+            {{link.label | translate}}
+        </a>
+    </ng-container>
+</nav>
+
+<nav *ngIf="isStretch" mat-tab-nav-bar mat-stretch-tabs fxFlex>
+    <ng-container *ngFor="let link of navLinks">
+        <a mat-tab-link [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive"
+            *ngIf="link.visible || link.visible == null">
+            {{link.label | translate}}
+        </a>
+    </ng-container>
+</nav>
