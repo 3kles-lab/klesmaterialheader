@@ -4,20 +4,20 @@ This library was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Code scaffolding
 
-Run `ng generate component component-name --project kles-header` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project kles-header`.
-> Note: Don't forget to add `--project kles-header` or else it will be added to the default project in your `angular.json` file. 
+Run `ng generate component component-name --project kles-material-header` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project kles-material-header`.
+> Note: Don't forget to add `--project kles-material-header` or else it will be added to the default project in your `angular.json` file. 
 
 ## Build
 
-Run `ng build kles-header` to build the project. The build artifacts will be stored in the `dist/` directory.
+Run `ng build kles-material-header` to build the project. The build artifacts will be stored in the `dist/` directory.
 
 ## Publishing
 
-After building your library with `ng build kles-header`, go to the dist folder `cd dist/kles-header` and run `npm publish`.
+After building your library with `ng build kles-material-header`, go to the dist folder `cd dist/kles-material-header` and run `npm publish`.
 
 ## Running unit tests
 
-Run `ng test kles-header` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Run `ng test kles-material-header` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Further help
 
