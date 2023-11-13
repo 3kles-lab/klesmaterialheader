@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Location } from '@angular/common';
 import { ILinkModel } from './models/link.model';
 
@@ -8,7 +8,6 @@ import { ILinkModel } from './models/link.model';
   styleUrls: ['./kles-material-header.component.scss']
 })
 export class KlesMaterialHeaderComponent {
-
   @Input() title!: string;
   @Input() navLinks?: ILinkModel[];
   @Input() close?: boolean;
@@ -17,9 +16,7 @@ export class KlesMaterialHeaderComponent {
   @Input() color?= "primary";
   @Input() isStretch?: boolean = false;
 
-  constructor(private location: Location) {
-
-  }
+  constructor(private location: Location) { }
 
   goBack() {
     this.location.back();

@@ -1,13 +1,12 @@
 {
   "name": "@3kles/kles-material-header",
-  "version": "1.0.0",
+  "version": "17.0.0",
   "peerDependencies": {
-    "@angular/common": "^11.0.3",
-    "@angular/core": "^11.0.3",
-    "@angular/material": "^11.0.1",
-    "@ngx-translate/core": "^12.1.1",
-    "@ngx-translate/http-loader": "^4.0.0",
-    "@angular/flex-layout": "^11.0.0-beta.33"
+    "@angular/common": "^17.0.2",
+    "@angular/core": "^17.0.2",
+    "@angular/material": "^17.0.0",
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"

@@ -1,6 +1,6 @@
 {
   "name": "@3kles/kles-material-header",
-  "version": "1.0.0",
+  "version": "17.0.0",
   "scripts": {
     "build:lib": "ng build kles-material-header --configuration production",
     "publish:lib": "cd dist/kles-material-header && npm publish --registry 'http://192.168.111.61:8081/repository/npm-3kles/'  --force",
@@ -18,7 +18,7 @@
     "@angular/common": "^17.0.2",
     "@angular/compiler": "^17.0.2",
     "@angular/core": "^17.0.2",
-    "@angular/flex-layout": "^11.0.0-beta.33",
+    "@angular/localize": "^17.0.2",
     "@angular/forms": "^17.0.2",
     "@angular/material": "^17.0.0",
     "@angular/platform-browser": "^17.0.2",
@@ -26,8 +26,8 @@
     "@angular/router": "^17.0.2",
     "@infor-up/m3-odin": "2.1.2",
     "@infor-up/m3-odin-angular": "2.1.2",
-    "@ngx-translate/core": "^12.1.1",
-    "@ngx-translate/http-loader": "^4.0.0",
+    "@ngx-translate/core": "^15.0.0",
+    "@ngx-translate/http-loader": "^8.0.0",
     "moment": "^2.24.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",

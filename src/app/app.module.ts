@@ -4,34 +4,27 @@ import { LOCALE_ID, NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { KlesMaterialDynamicformsModule } from 'kles-material-dynamicforms';
 import { MaterialModule } from './modules/material.module';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { KlesNgPipeModule} from '@3kles/kles-ng-pipe';
 import localeFr from '@angular/common/locales/fr';
 import { CommonModule, registerLocaleData } from '@angular/common';
-import { SelectTriggerComponent } from './select/select-trigger.component';
-import { SelectOptionComponent } from './select/select-option.component';
+import { KlesMaterialHeaderModule } from 'projects/kles-material-header/src/public-api';
+
 registerLocaleData(localeFr);
 @NgModule({
   declarations: [
-    AppComponent,
-    SelectTriggerComponent,
-    SelectOptionComponent
+    AppComponent
   ],
   imports: [
     CommonModule,
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
-    KlesNgPipeModule,
-    KlesMaterialDynamicformsModule,
     BrowserAnimationsModule,
-    FlexLayoutModule,
     HttpClientModule,
+    KlesMaterialHeaderModule,
     TranslateModule.forRoot(
       {
         loader: {
@@ -42,7 +35,7 @@ registerLocaleData(localeFr);
       }
     )
   ],
-  exports: [KlesMaterialDynamicformsModule],
+  exports: [],
   providers: [TranslateService, { provide: LOCALE_ID, useValue: 'fr-FR' }],
   bootstrap: [AppComponent]
 })
