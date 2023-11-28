@@ -11,10 +11,24 @@ export class AppComponent implements OnInit, AfterViewInit {
     {
       path: '',
       active: true,
-      label: 'test',
+      label: 'test1',
+      visible: true
+    },
+    {
+      path: '',
+      active: true,
+      label: 'test2',
+      visible: true
+    },
+    {
+      path: '',
+      active: true,
+      label: 'test3',
       visible: true
     }
   ];
+  isStretch = false;
+  align = 'center';
 
   ngOnInit(): void {
   }
