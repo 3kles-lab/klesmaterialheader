@@ -28,7 +28,16 @@ export class AppComponent implements OnInit, AfterViewInit {
     }
   ];
   isStretch = false;
-  align = 'center';
+  align = 'start';
+
+
+
+  styles = {
+    header: 'nav header',
+    toolbar:'nav',
+    // closeButton?: '';
+    title: 'title'
+  }
 
   ngOnInit(): void {
   }
