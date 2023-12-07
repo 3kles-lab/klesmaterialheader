@@ -1,34 +1,12 @@
-.mat-tab-nav-bar {
-    background-color: white;
-}
-
 .fill-space {
     flex: 1 1 auto;
 }
 
-.mat-tab-label {
-    background-color: white;
+.header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
 }
 
-mat-tab-nav-panel {
-    display: none;
-}
+// mat-tab-nav-panel {
+//     display: none;
+// }
 
-:host {
-    display: flex;
-    flex-direction: column;
-    min-height: 113px;
-    background-color: white;
-}
-
-.close {
-    background-color: white;
-    border: 1px solid;
-    color: #f54700;
-    box-shadow: none;
-}
-
-.close:hover {
-    background-color: #ff683b;
-    color: white;
-}

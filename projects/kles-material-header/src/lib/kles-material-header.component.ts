@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Location } from '@angular/common';
+import { Location, NgClass } from '@angular/common';
 import { ILinkModel } from './models/link.model';
 
 @Component({
@@ -8,13 +8,20 @@ import { ILinkModel } from './models/link.model';
   styleUrls: ['./kles-material-header.component.scss']
 })
 export class KlesMaterialHeaderComponent {
-  @Input() title!: string;
+  @Input() title?: string;
   @Input() navLinks?: ILinkModel[];
   @Input() close?: boolean;
   @Input() enableTitle?: boolean = true;
   @Input() align?= "start";
-  @Input() color?= "primary";
+  @Input() color?;
   @Input() isStretch?: boolean = false;
+
+  @Input() styles?: {
+    header?: NgClass;
+    toolbar?: NgClass;
+    closeButton?: NgClass;
+    title?: NgClass;
+  }
 
   constructor(private location: Location) { }
 
