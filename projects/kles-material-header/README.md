@@ -1,24 +1,61 @@
-# KlesHeader
+<!--[![pipeline status](http://gitlab.3kles.local/angular/klesmaterialheader/badges/master/pipeline.svg)](http://gitlab.3kles.local/angular/klesmaterialheader/-/commits/master)-->
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+# @3kles/kles-material-header
 
-## Code scaffolding
+**kles-material-header** is a component library to build `Material Angular Header`.
 
-Run `ng generate component component-name --project kles-material-header` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project kles-material-header`.
-> Note: Don't forget to add `--project kles-material-header` or else it will be added to the default project in your `angular.json` file. 
+## Changelog
 
-## Build
+Check out the [changelog](./CHANGELOG.md) to check all the latest changes.
 
-Run `ng build kles-material-header` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Models
 
-## Publishing
+### Interfaces
 
-After building your library with `ng build kles-material-header`, go to the dist folder `cd dist/kles-material-header` and run `npm publish`.
+#### ILinkModel
 
-## Running unit tests
+Interface for header links
 
-Run `ng test kles-material-header` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- <b>path</b>: string -> Redirect path
+- <b>active?</b>: boolean -> Set if nav link is active
+- <b>label</b>: string -> Label of the nav link
+- <b>visible?</b>: boolean -> Set if the nav link is visible
 
-## Further help
+### Components
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- <b>KlesMaterialHeaderComponent</b> -> Component to create a header
+
+## Install
+
+### npm
+
+```
+npm install @3kles/kles-material-header --save
+```
+
+## How to use
+
+In the module
+```javascript
+import { KlesMaterialHeaderModule } from '@3kles/kles-material-header';
+...
+@NgModule({
+    imports: [
+        KlesMaterialHeaderModule,
+        ...
+    ]
+    ...
+})
+```
+
+Check the [`documentation`](https://doc.3kles-consulting.com/#/material/header) to use component and directive.
+
+## Tests
+
+```
+npm install
+npm test
+```
+## License
+
+[`MIT`](./LICENSE.md)
