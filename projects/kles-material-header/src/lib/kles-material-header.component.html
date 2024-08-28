@@ -2,7 +2,7 @@
   @if (enableTitle) {
   <mat-toolbar [color]="color" [ngClass]="styles?.toolbar">
     @if (title) {
-    <h2 class="mat-h2" [ngClass]="styles?.title">{{ title | translate | titlecase }}</h2>
+    <h2 class="mat-h2" [ngClass]="styles?.title">{{ title | translate }}</h2>
     }
     <span class="fill-space"></span>
 
@@ -21,7 +21,7 @@
     @for (link of navLinks; track link.path) {
     @if (link.visible || link.visible == null) {
     <a mat-tab-link [routerLink]="link.path" routerLinkActive #rla="routerLinkActive" [active]="rla.isActive">
-      {{link.label | translate}}
+      {{link.label | translate }}
     </a>
     }
     }
