@@ -24,16 +24,16 @@ export class KlesMaterialHeaderComponent {
     title?: NgClass;
   }
 
-  @Input() routerLink?: any[] | string | UrlTree | null | undefined;
+  @Input() closeLink?: any[] | string | UrlTree | null | undefined;
 
   constructor(private location: Location, private router: Router) { }
 
   goBack() {
-    if (this.routerLink) {
-      if (Array.isArray(this.routerLink)) {
-        this.router.navigate(this.routerLink);
+    if (this.closeLink) {
+      if (Array.isArray(this.closeLink)) {
+        this.router.navigate(this.closeLink);
       } else {
-        this.router.navigateByUrl(this.routerLink);
+        this.router.navigateByUrl(this.closeLink);
       }
     } else {
       this.location.back();

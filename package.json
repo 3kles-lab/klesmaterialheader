@@ -1,6 +1,6 @@
 {
   "name": "@3kles/kles-material-header",
-  "version": "17.2.0",
+  "version": "17.2.1",
   "scripts": {
     "build:lib": "ng build kles-material-header --configuration production",
     "build:watch": "ng build kles-material-header --watch",
