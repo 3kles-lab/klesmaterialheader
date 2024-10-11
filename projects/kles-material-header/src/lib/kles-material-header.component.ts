@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Location, NgClass } from '@angular/common';
 import { ILinkModel } from './models/link.model';
+import { Router, UrlTree } from '@angular/router';
 
 @Component({
   selector: 'kles-material-header',
@@ -12,7 +13,7 @@ export class KlesMaterialHeaderComponent {
   @Input() navLinks?: ILinkModel[];
   @Input() close?: boolean;
   @Input() enableTitle?: boolean = true;
-  @Input() align?= "start";
+  @Input() align? = "start";
   @Input() color?;
   @Input() isStretch?: boolean = false;
 
@@ -23,9 +24,20 @@ export class KlesMaterialHeaderComponent {
     title?: NgClass;
   }
 
-  constructor(private location: Location) { }
+  @Input() routerLink?: any[] | string | UrlTree | null | undefined;
+
+  constructor(private location: Location, private router: Router) { }
 
   goBack() {
-    this.location.back();
+    if (this.routerLink) {
+      if (Array.isArray(this.routerLink)) {
+        this.router.navigate(this.routerLink);
+      } else {
+        this.router.navigateByUrl(this.routerLink);
+      }
+    } else {
+      this.location.back();
+    }
+
   }
 }
