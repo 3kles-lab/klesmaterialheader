@@ -11,10 +11,16 @@ import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-transla
 import localeFr from '@angular/common/locales/fr';
 import { CommonModule, registerLocaleData } from '@angular/common';
 import { KlesMaterialHeaderModule } from 'projects/kles-material-header/src/public-api';
+import { LaunchComponent } from './modules/launch/launch.component';
+import { HistoryComponent } from './modules/history/history.component';
+import { SettingsComponent } from './modules/settings/settings.component';
 
 registerLocaleData(localeFr);
 @NgModule({ declarations: [
-        AppComponent
+        AppComponent,
+        LaunchComponent,
+        HistoryComponent,
+        SettingsComponent
     ],
     exports: [],
     bootstrap: [AppComponent], imports: [CommonModule,

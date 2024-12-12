@@ -9,19 +9,19 @@ import { AfterViewInit, Component, OnInit, ViewEncapsulation } from "@angular/co
 export class AppComponent implements OnInit, AfterViewInit {
   links = [
     {
-      path: '',
+      path: 'launch',
       active: true,
       label: 'test1',
       visible: true
     },
     {
-      path: '',
+      path: 'history',
       active: true,
       label: 'test2',
       visible: true
     },
     {
-      path: '',
+      path: 'settings',
       active: true,
       label: 'test3',
       visible: true
